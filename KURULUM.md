@@ -150,9 +150,35 @@ adresiyle aç, form gönder — Sheet'te Kaynak/Kampanya/Reklam Adı kolonları 
 
 ---
 
-## SONRAKİ AŞAMA (sistem çalıştıktan sonra)
+## FOTOĞRAFLARI GÜNCELLEME / YENİ FOTO EKLEME
 
-İlk satışlar gelince düşünülecekler:
+Fotoğraflar `public/images/` klasöründe. Şu an ekli olanlar:
+
+| Dosya | Nerede görünür |
+|---|---|
+| `hero-aerial.jpg` | Hero (açılış) görseli |
+| `location-aerial.jpg` | Konum bölümü |
+| `living-bedroom.jpg` | "Bağımsız yaşam" kartı |
+| `support-bathroom.jpg` | "Yanı başında destek" kartı |
+| `social-garden.jpg` | "Sosyal bir çevre" kartı |
+| `interior-living.jpg` | (yedek — şu an kullanılmıyor) |
+
+**Bir fotoğrafı değiştirmek için:** Aynı isimle yeni dosyayı `public/images/`
+klasörüne koy (eskisinin üzerine yaz), push et. Site otomatik güncellenir.
+
+**Yeni foto eklemek için:** Dosyayı `public/images/`'a koy, `src/app/page.tsx`
+içinde ilgili `<Image src="/images/DOSYA.jpg" .../>` satırını ekle/düzenle.
+
+**Önemli:** Fotoğrafları web için küçült (genişlik ~1600px, JPG, <500 KB).
+Büyük dosyalar siteyi yavaşlatır ve mobil reklam dönüşümünü düşürür.
+
+Tüm görsellerin altında "Konsept görsel — temsilîdir" etiketi vardır;
+bu hem marka kuralı hem hukuki gereklilik (var olmayan binayı gerçek
+gibi göstermemek). Bu etiketi kaldırma.
+
+---
+
+## SONRAKİ AŞAMA (sistem çalıştıktan sonra)İlk satışlar gelince düşünülecekler:
 - Lead scoring eşiklerini gerçek veriye göre kalibre et
 - En çok dönüşen reklam açısına bütçe kaydır
 - WhatsApp otomatik yanıt / chatbot ekle
