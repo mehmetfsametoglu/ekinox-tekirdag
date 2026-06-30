@@ -101,7 +101,15 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="ribbon">Ön Talep Dönemi</div>
-            <div className="ph">[ Konsept yaşam görseli buraya gelecek — temsilîdir ]</div>
+            <div className="ph"> <Image
+  src="/images/hero-aerial.jpg"
+  alt="Tekirdağ destekli yaşam projesi konsept yerleşim görseli"
+  width={1600}
+  height={1200}
+  priority
+  className="visual-img"
+/>
+<div className="ph">Konsept görsel — temsilîdir</div> </div>
           </div>
         </div>
         <div className="wrap"><div className="hero-wave"></div></div>
@@ -179,7 +187,14 @@ export default function Home() {
           <span className="kicker">Konum</span>
           <h2 className="sec">Tekirdağ&apos;da, doğayla şehir arasında</h2>
           <p className="lead">[ Sincap Evleri çevresi, İstanbul&apos;a mesafe, çevredeki sağlık ve sosyal imkanlar bu bölüme yazılacak. ]</p>
-          <div className="loc-visual"><div className="ph">[ Harita / lokasyon görseli buraya gelecek ]</div></div>
+          <div className="loc-visual"><div className="ph"> <Image
+  src="/images/location-aerial.jpg"
+  alt="Tekirdağ Sincap Evleri bitişiği proje konumu konsept görseli"
+  width={1600}
+  height={700}
+  className="visual-img"
+/>
+<div className="ph">Konsept lokasyon görseli — temsilîdir</div></div> </div>
         </div>
       </section>
 
