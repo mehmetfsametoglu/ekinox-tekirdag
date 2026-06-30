@@ -176,3 +176,47 @@ footer img{height:44px;margin-bottom:20px}
   object-fit: cover;
   display: block;
 }
+
+/* === IMAGE DISPLAY FIX === */
+
+/* Hero görseli: tüm render görünsün, kırpılmasın */
+.hero-visual {
+  aspect-ratio: 16 / 10 !important;
+  max-height: none !important;
+  background: #F6F1EA !important;
+}
+
+.hero-visual .visual-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #F6F1EA !important;
+}
+
+/* Lokasyon görseli: geniş render tam görünsün */
+.loc-visual {
+  aspect-ratio: 16 / 9 !important;
+  overflow: hidden !important;
+  background: #F6F1EA !important;
+}
+
+.loc-visual .visual-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #F6F1EA !important;
+}
+
+/* Kartlardaki iç mekân görselleri: düzgün ve merkezli görünsün */
+.card img,
+.card .visual-img {
+  width: 100% !important;
+  height: 240px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
