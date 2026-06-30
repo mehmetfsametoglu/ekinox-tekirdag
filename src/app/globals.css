@@ -169,3 +169,10 @@ footer img{height:44px;margin-bottom:20px}
   .foot-brand{align-self:flex-start}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
